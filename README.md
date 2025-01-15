@@ -13,7 +13,6 @@ A simple news application built using Python, Flask, and NewsAPI. It fetches top
 - **Flask**: A lightweight WSGI web application framework for Python.
 - **NewsAPI**: To fetch news articles from various sources.
 - **HTML/CSS**: For structuring and styling the frontend.
-- **JavaScript**: For any potential interactive features (if added in the future).
 
 ## Installation
 
