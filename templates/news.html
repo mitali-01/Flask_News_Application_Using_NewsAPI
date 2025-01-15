@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Headlines</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Top Headlines</h1>
+    <div class="news-container">
+        {% for title, description, image, url in context %}
+        <div class="article-card">
+            <h2>{{ title }}</h2>
+            {% if image %}
+            <img src="{{ image }}" alt="{{ title }}">
+            {% endif %}
+            <p>{{ description }}</p>
+            <a href="{{ url }}" target="_blank">Read more</a>
+        </div>
+        {% endfor %}
+    </div>
+    <footer>
+        <p>&copy; 2025 News Application | All rights reserved</p>
+    </footer>
+</body>
+</html>
